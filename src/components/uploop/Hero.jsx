@@ -66,7 +66,7 @@ const Hero = ({ user }) => {
                       ),
                     });
               }}
-              className={`text-xl font-semibold px-4 py-2 border-2 rounded-lg ${
+              className={`text-xl font-semibold px-4 py-2 border-2 rounded-lg z-10 ${
                 user
                   ? "hover:cursor-pointer"
                   : "opacity-24 hover:cursor-not-allowed"

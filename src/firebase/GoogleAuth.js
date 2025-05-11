@@ -1,6 +1,6 @@
 import { app } from "./Firebase";
 import { getAuth, GoogleAuthProvider, signInWithPopup, reauthenticateWithPopup, signOut } from "firebase/auth";
-import { setYoutubeData } from "./Firestore";
+import { setUserData, setYoutubeData } from "./Firestore";
 
 export const auth = getAuth(app);
 auth.useDeviceLanguage();
@@ -8,15 +8,10 @@ export const signInWithGoogle = async () => {
     try {
         const result = await signInWithPopup(auth, new GoogleAuthProvider());
         if (result) {
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
-
-            return { token, result }
+            setUserData(result.user);
         }
     } catch (error) {
         console.error(error.code, ": ", error.message);
-        console.error("Email:", error.customData?.email);
-        console.error("Credential:", GoogleAuthProvider.credentialFromError(error));
     }
 }
 

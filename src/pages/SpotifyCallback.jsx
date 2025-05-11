@@ -11,8 +11,6 @@ const SpotifyCallback = ({ user }) => {
       const getToken = async () => {
         const res = await getSpotifyToken();
         if (res && user) {
-          console.log(res);
-          console.log(user);
           await setSpotifyData(user?.uid, res);
         }
         navigate("/filtered-spotify");

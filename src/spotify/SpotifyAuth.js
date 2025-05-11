@@ -27,17 +27,20 @@ export const getSpotifyAuthUrl = async () => {
 
     const scope = [
         "user-read-playback-state",
-        "user-read-recently-played",
-        "user-follow-read",
-        "playlist-modify-private",
-        "user-read-email",
         "user-read-currently-playing",
         "playlist-read-private",
-        "user-library-modify",
+        "playlist-read-collaborative",
+        "playlist-modify-private",
+        "playlist-modify-public",
         "user-follow-modify",
-        "user-library-read",
+        "user-follow-read",
+        "user-read-playback-position",
         "user-top-read",
-        "playlist-modify-public"
+        "user-read-recently-played",
+        "user-library-modify",
+        "user-library-read",
+        "user-read-email",
+        "user-read-private"
     ].join(" ");
     const authUrl = new URL(import.meta.env.VITE_SPOTIFY_AUTH_URL)
 

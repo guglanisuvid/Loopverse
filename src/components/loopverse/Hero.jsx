@@ -1,5 +1,8 @@
 import React from "react";
 import { signInWithGoogle } from "../../firebase/GoogleAuth";
+import { toast } from "react-toastify";
+import { faWarning } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Hero = ({ user }) => {
   return (
@@ -19,8 +22,15 @@ const Hero = ({ user }) => {
           </h3>
         </div>
         <button
-          onClick={signInWithGoogle}
-          disabled={user}
+          onClick={() => {
+            user
+              ? toast.warning("You are already signed in.", {
+                  icon: (
+                    <FontAwesomeIcon icon={faWarning} className="text-xl" />
+                  ),
+                })
+              : signInWithGoogle();
+          }}
           className={`text-xl font-semibold px-4 py-2 ${
             user
               ? "opacity-24 hover:cursor-not-allowed"
