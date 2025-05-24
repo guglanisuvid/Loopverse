@@ -11,6 +11,10 @@ const Hero = ({ user }) => {
       className="h-screen px-16 pt-24 pb-8 flex justify-between items-center"
     >
       <div className="text-center px-32 flex flex-col gap-8 justify-center items-center">
+        <div className="text-2xl font-semibold text-text-200 opacity-40">
+          Loopverse is still under construction, but feel free to explore! More
+          awesomeness coming soon...
+        </div>
         <div className="flex flex-col gap-4 justify-center items-center">
           <h1 className="text-8xl leading-28 font-medium">
             Connect. Create. Filter. Approve. Upload. Welcome to Loopverse.
