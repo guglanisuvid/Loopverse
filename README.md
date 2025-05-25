@@ -46,6 +46,10 @@ Loopverse is more than a tool — it’s a creative playground. Whether you're e
 
 Join the Loop — where creativity finds its rhythm.
 
+#### Note
+
+This website is currently best enjoyed on desktop screens. While we absolutely love mobile devices, tablets, and everything in between, the layout hasn’t quite caught up with the multiverse of screen dimensions just yet.
+
 ## 🛠️ Running the Project
 
 Want to run **AcadAI** on your local machine? Follow these steps:
