@@ -46,9 +46,9 @@ Loopverse is more than a tool — it’s a creative playground. Whether you're e
 
 Join the Loop — where creativity finds its rhythm.
 
-#### Note
+#### Note:
 
-This website is currently best enjoyed on desktop screens. While we absolutely love mobile devices, tablets, and everything in between, the layout hasn’t quite caught up with the multiverse of screen dimensions just yet.
+This website is currently best enjoyed on desktop screens. While I absolutely love mobile devices, tablets, and everything in between, the layout hasn’t quite caught up with the multiverse of screen dimensions just yet.
 
 ## 🛠️ Running the Project
 
