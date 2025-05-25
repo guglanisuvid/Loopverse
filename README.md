@@ -20,7 +20,7 @@ Why Uploop Needs YouTube Access:
 - Requires only permissions necessary for uploading and managing videos.
 - Ensures full user control — access can be revoked anytime.
 
-### 🎵 Filtered Spotify — Smarter Playlists, Your Way
+### 🎵 Filtered Spotify — Smarter Playlists, Your Way [Project Link](https://github.com/guglanisuvid/Filtered-Spotify.git)
 
 Filtered Spotify is a Chrome extension that makes your Spotify experience more personal and powerful.
 
